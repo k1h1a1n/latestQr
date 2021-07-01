@@ -1,0 +1,17 @@
+<form [formGroup]="SignIn" (ngSubmit) = "onSubmit()">
+<mat-card class="Card">
+    <div class="row"><h2 class="esehat">Esehat</h2></div>
+    <input style="margin-top: 35%;" class="input4" placeholder="Username" type="text" formControlName="email">
+    <div style="margin-top: 8px;" *ngIf = "SignIn.controls.email.invalid && SignIn.controls.email.touched || SignIn.controls.email.dirty">
+        <span class="error" *ngIf = "SignIn.controls.email.errors" >Username is required.</span>
+    </div>
+    <input [type]="show ? 'text' : 'password'" style="margin-top: 6%;" class="input4" placeholder="Password" type="text" formControlName="password">
+    <div style="margin-top: 8px;" *ngIf = "SignIn.controls.password.invalid && SignIn.controls.password.touched || SignIn.controls.password.dirty">
+        <span class="error" *ngIf = "SignIn.controls.password.errors" >Password is required.</span>
+    </div>
+    <button type="submit" style="margin-top: 10%;" class="save"> <b style="color: white;font-weight: 500;">Sign In</b></button>
+    <div style="margin-top: 14px;margin-left: auto;margin-right: auto;text-align: center;font-size: larger;">
+        <span class="error1" *ngIf = "msg" >{{msg}}</span>
+    </div>
+</mat-card> 
+</form>

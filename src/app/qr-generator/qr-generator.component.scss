@@ -1,0 +1,77 @@
+::ng-deep .mat-card{
+    box-shadow: 0px 0px 4px 1px #d7d7d7;
+    background-color: #fcfcfc;
+    border-radius: 8px 8px 8px 8px;
+    height: 400px;
+    width: 400px; 
+    margin-left: 32%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.save{
+    background-color: #6fb554;
+    color: white;
+    height: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 77%;
+    box-shadow: 0px 0px 3px 1px #d7d7d7;
+    border-width: 1px;
+    border-top: #3f3f3f;
+    border-bottom: #3f3f3f;
+    border-left: #3f3f3f;
+    border-right: #3f3f3f;
+    justify-content: center;
+    display: block;
+    border-radius: 20px;
+}
+
+#custom-button {
+   margin-top: 100px;
+    padding: 10px;
+    color: white;
+    background-color: #6fb554;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20%;
+    border-color: #6fb554;
+    font-weight: 500;
+    text-align: start;
+    
+  }
+  #custom-button:hover{
+      background-color: #2f6e0a;
+  }
+  
+  #custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    border-right: 1px;
+    border-color: black;
+    color: #000;
+  }
+  #upload-btn{
+      padding: 10px;
+      background-color: #54d620;
+  }
+  .save:hover{
+    background-color: #2f6e0a;
+
+   
+}
+
+#logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    background-color: #163899;
+    color: white;
+    width: 100%;
+    
+
+}
+#logout:hover{
+    background-color:#0a256e;
+}

@@ -1,0 +1,29 @@
+<mat-card class="Card">
+
+
+
+
+
+    <button id="custom-button" type="button" (click)="fileInput.click()">
+        <span>Select file</span>
+        <input #fileInput type="file" id="file" (change)="handleFileInput($event)" hidden>
+    </button>
+    <span id="custom-text">{{mytext}}</span><br><br>
+
+
+
+
+
+    <div  *ngIf="showmessage" style="color: red;font-weight: 200;margin-left: 15%;">Please select a file</div>
+    <button class="save" (click)="uploadFileToActivity()">Upload</button>
+
+
+
+    <!-- <button (click)="uploadFileToActivity()" class="save"> <b
+                style="color: white;font-weight: 500;">Upload</b></button> -->
+               
+    <button id="logout" (click)="logout()">Logout</button>
+
+
+   
+</mat-card>
